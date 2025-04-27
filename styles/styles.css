@@ -1,0 +1,536 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+
+    --primary-font-family : 'Syne';
+    --secondary-font-family : 'Roboto';
+
+    --primary-color : #002D62;
+    --secondary-color : #041E42;
+    --tertiary-color : #F06105;
+
+    --input-background-color : #f2f8fe;
+    --input-button-color : #cfdfef;
+    --input-placeholder-color : #5F7A9A;
+
+    --sidebar-background-color : #dfeeff;
+
+    --border-color : #dae7f67a;
+    --shadow-color : #041e421c;
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: var(--secondary-font-family), sans-serif;
+    color: var(--primary-color);
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: var(--primary-font-family), sans-serif;
+    color: var(--secondary-color);
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+p{
+    line-height: 170%;
+}
+
+h1{
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+/* ==================================================
+                    Styles arrangement
+=====================================================
+
+    - common class styles
+    - header syltes
+
+*/
+
+
+
+/* ==================================================
+                 Basic class 
+================================================== */
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.border-btn{
+    border: 2px solid white;
+    padding: 10px 25px;
+    border-radius: 10px;
+    transition: all ease 400ms;
+}
+
+.blue-btn{
+    border: 2px solid var(--secondary-color);
+    background-color: var(--secondary-color);
+    padding: 10px 25px;
+    border-radius: 10px;
+    transition: all ease 400ms;
+}
+
+.border-btn:hover{
+    color: var(--primary-color);
+    background-color: white;
+    font-weight: 500;
+}
+
+.orange-btn{
+    background-color: var(--tertiary-color);
+    cursor: pointer;
+    padding: 10px 30px;
+    border: 2px solid var(--tertiary-color);
+    border-radius: 10px;
+    transition: all ease 400ms;
+}
+
+.orange-btn:hover{
+    background-color: transparent;
+    color: var(--tertiary-color);
+}
+
+.logo{
+    font-family: var(--primary-font-family);
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 5px;
+}
+
+.section-title{
+    font-size: 2rem;
+}
+
+.bg-primary{
+    background-color: var(--primary-color);
+}
+
+.h-min-80{
+    min-height: 80px;
+}
+
+.h-100{
+    height: 100%;
+}
+
+.w-60{
+    width: 60%;
+}
+
+.w-80{
+    width: 80%;
+}
+
+.w-100{
+    width: 100%;
+}
+
+.w-50{
+    width: 50%;
+}
+
+.w-40{
+    width: 40%;
+}
+
+.margin-y-10{
+    margin: 10px 0;
+}
+
+.margin-y-15{
+    margin: 15px 0;
+}
+
+.margin-y-20{
+    margin: 20px 0;
+}
+
+.margin-y-50{
+    margin: 50px 0;
+}
+
+.flex{
+    display: flex;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+
+.flex-space-between{
+    justify-content: space-between;
+}
+
+.flex-vertical-center{
+    align-items: center;
+}
+
+.flex-self-start{
+    align-self: flex-start;
+}
+
+.flex-self-center{
+    align-self: center;
+}
+
+.flex-self-end{
+    justify-self: flex-end;
+}
+
+.flex-gap-y-10{
+    column-gap: 10px;
+}
+
+.flex-gap-y-20{
+    column-gap: 20px;
+}
+
+.grid-3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+input, textarea{
+    width: 100%;
+    border: 2px solid var(--border-color);
+    border-radius: 10px;
+    font-family: var(--secondary-font-family);
+    background-color: var(--input-background-color);
+    padding:  0 20px;
+    color: var(--secondary-color);
+    z-index: 111;
+}
+
+input::placeholder, textarea::placeholder{
+    font-family: var(--secondary-font-family);
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--input-placeholder-color);
+}
+
+textarea{
+    padding: 20px;
+    margin-top: 10px;
+}
+
+input:focus{
+    outline: none;
+}
+
+textarea:focus{
+    outline: none;
+}
+
+input{
+    height: 50px;
+    margin: 10px 0;
+}
+
+input[type='file']{
+    background-color: transparent;
+    padding: 10px 0 0 0;
+    border: none;
+    margin-bottom: 20px;
+}
+
+input[type = 'submit']{
+    background-color: var(--tertiary-color);
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    border: 2px solid var(--tertiary-color);
+    width: fit-content;
+    padding: 10px 50px;
+}
+
+input::file-selector-button{
+    background-color: var(--input-button-color);
+    color: var(--secondary-color);
+    border-radius: 10px;
+    padding: 10px 30px;
+    border: 2px solid var(--border-color);
+    font-family: var(--secondary-font-family);
+}
+
+select{
+    
+}
+
+/* ==================================================
+                Header styles
+================================================== */
+
+.header{
+    color: white;
+    position: relative;
+}
+
+.header a{
+    font-size: 14px;
+    position: relative;
+}
+
+.header .nav-link::before{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0;
+    background-color: white;
+    left: 0;
+    bottom: -10px;
+    transition: all ease 400ms;
+}
+
+.header .nav-link:hover::before{
+    width: 100%;
+}
+
+.header .menu-icon{
+    display: none;
+}
+
+.active-link{
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+/* ==================================================
+                agent page styles
+================================================== */
+
+.contact-agent{
+    background-image: linear-gradient(to right, white, transparent), url('../sources/Simple\ Black\ and\ White\ Fashion\ Facebook\ Cover.png');
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.contact-agent h1{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.contact-agent .container .form-section{
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 10px var(--shadow-color);
+}
+
+.agent-header{
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+}
+
+.agent-header p{
+    margin-bottom: 40px;
+    line-height: 150%;
+}
+
+.agent-stats{
+    background-color: var(--primary-color);
+    height: 150px;
+    margin-top: -50px;
+    border-radius: 20px;
+    color: white;
+}
+
+.agent-stats i{
+    font-size: 4rem;
+}
+
+.agent-stats .stat-card .stat-header{
+    font-size: 1.7rem;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.agent-stats .stat-card .stat-sub-header{
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.554);
+}
+
+.agent-cards{
+    display: grid;
+    column-gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.agent-card img{
+    width: 100%;
+}
+
+.agent-cards a{
+    color: var(--tertiary-color);
+}
+
+.agent-cards p{
+    margin-bottom: 10px;
+}
+
+.agent-card{
+    padding: 10px;
+}
+
+.agent-card .text-content{
+    padding: 10px 30px;
+}
+
+.agent-card h3{
+    font-size: 1.5rem;
+}
+
+
+/* ================================================
+                Footer Design
+================================================ */
+
+.footer{
+    background-color: var(--primary-color);
+    width: 100%;
+    padding: 100px 0 20px 0;
+    color: white;
+
+}
+
+.footer .container{
+    column-gap: 2rem;
+}
+
+.footer .link-set{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.footer h2{
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.footer .ownership{
+    text-align: center;
+    padding: 40px 0 0 0;
+
+}
+
+.footer .ownership hr{
+    margin-bottom: 20px;
+    margin-top: 50px;
+    background-color : rgba(255, 255, 255, 0.061);
+}
+
+.footer .ownership span{
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 5px;
+    margin-left: 10px;
+}
+
+
+/* ==================================================
+                agent dashboard
+================================================== */
+
+.dashboard-body{
+    height: 100%;
+    width: 100%;
+}
+
+.dashboard-body .side-bar{
+    background-color: var(--sidebar-background-color);
+    padding: 50px 0 20px 50px;
+    width: 300px;
+}
+
+.dashboard-body .side-bar a{
+    color: var(--secondary-color);
+}
+
+.dashboard-body .side-bar i{
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.dashboard-body .side-bar p{
+    font-size: 1rem;
+}
+
+.dashboard-body .side-bar .function-card{
+    padding: 15px 20px;
+    transition: all ease 400ms;
+}
+
+.dashboard-body .side-bar .function-card:hover{
+    box-shadow: -2px 2px 4px var(--shadow-color);
+    border-radius: 10px 0 0 10px;
+    background-color: #fff;
+}
+
+.active-function{
+    box-shadow: -2px 2px 4px var(--shadow-color);
+    border-radius: 10px 0 0 10px;
+    background-color: #fff;
+}
+
+.dashboard-body table{
+    margin-top: 30px;
+}
+
+table {
+    text-align: center;
+}
+
+table tr{
+    height: 60px;
+}
+
+table th{
+    background-color: var(--input-button-color);
+}
+
+/* ==================================================
+                    test desing
+================================================== */
+
+.images{
+    position: relative;
+    height: 400px;
+    width: 500px;
+}
+
+.images img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+

@@ -1,0 +1,17 @@
+<?php
+
+    session_start();
+    
+    if(isset($_SESSION['user-id'])){
+        if(isset($_SESSION['user-account-type'])){
+            switch($_SESSION['user-account-type']){
+                case 'agent':
+                    header('location:../agent/agent.php');
+            }
+        }
+    }   
+    else{
+        header('location:./pages/home.php');
+    }
+
+?>

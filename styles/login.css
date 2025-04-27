@@ -1,0 +1,106 @@
+/*login*/
+.body-content {
+    font-family: Arial, sans-serif;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    
+}
+
+.body-content a{
+    color: black;
+}
+
+.body-content h1{
+    font-size: 1.8rem;
+}
+
+.body-content h2{
+    font-size: 1.5rem;
+}
+
+.body-content input[type='checkbox']{
+    display: flex;
+    height: 10px;
+    margin: 0;
+}
+
+.check-box{
+    display: flex;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+}
+
+.check-box label{
+    margin: 0;
+    width: 100%;
+}
+
+.description {
+    flex: 0 0 40%;
+    padding: 20px;
+}
+
+.login-form {
+    width: 40%;
+    float: right;
+    margin: 50px;
+    padding: 20px;
+}
+
+#username, #password {
+    width: 100%;
+    height: 40px;
+}
+
+fieldset{
+    padding: 20px;
+}
+
+#pw {
+    float: right;
+    color: blue;
+}
+
+#register {
+    color: blue
+}
+
+#btn {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 35px;
+}
+
+#link1,#link2 {
+    text-align: center;
+    color: blue;
+}
+
+/*forget-password*/
+.forget-password {
+    width: 500px;
+    text-align: center;
+    font-size: 20px;
+    padding: 25px 25px 50px 25px;
+    
+    
+}
+
+#reset {
+    color: white;
+    background-color: black;
+    width: 200px;
+    height: 25px;
+}
+
+.forget-password{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}

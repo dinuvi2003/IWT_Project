@@ -1,0 +1,229 @@
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.border-btn{
+    border: 2px solid white;
+    padding: 10px 25px;
+    border-radius: 10px;
+    transition: all ease 400ms;
+}
+
+.border-btn:hover{
+    color: var(--primary-color);
+    background-color: white;
+    font-weight: 500;
+}
+
+.orange-btn{
+    background-color: var(--tertiary-color);
+    cursor: pointer;
+    padding: 10px 30px;
+    border: 2px solid var(--tertiary-color);
+    border-radius: 10px;
+    transition: all ease 400ms;
+}
+
+.orange-btn:hover{
+    background-color: transparent;
+    color: var(--tertiary-color);
+}
+
+.logo{
+    font-family: var(--primary-font-family);
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 5px;
+}
+
+.bg-primary{
+    background-color: var(--primary-color);
+}
+
+.h-min-80{
+    min-height: 80px;
+}
+
+.h-100{
+    height: 100%;
+}
+
+.w-60{
+    width: 60%;
+}
+
+.w-80{
+    width: 80%;
+}
+
+.w-100{
+    width: 100%;
+}
+
+.w-50{
+    width: 50%;
+}
+
+.w-40{
+    width: 40%;
+}
+
+.margin-y-10{
+    margin: 10px 0;
+}
+
+.margin-y-15{
+    margin: 15px 0;
+}
+
+.margin-y-20{
+    margin: 20px 0;
+}
+
+.margin-y-50{
+    margin: 50px 0;
+}
+
+.flex{
+    display: flex;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+
+.flex-space-between{
+    justify-content: space-between;
+}
+
+.flex-vertical-center{
+    align-items: center;
+}
+
+.flex-self-start{
+    align-self: flex-start;
+}
+
+.flex-self-center{
+    align-self: center;
+}
+
+.flex-self-end{
+    justify-self: flex-end;
+}
+
+.flex-gap-y-10{
+    column-gap: 10px;
+}
+
+.flex-gap-y-20{
+    column-gap: 20px;
+}
+
+
+.grid-3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+input, textarea{
+    width: 100%;
+    border: 2px solid var(--border-color);
+    border-radius: 10px;
+    font-family: var(--secondary-font-family);
+    background-color: var(--input-background-color);
+    padding:  0 20px;
+    color: var(--secondary-color);
+    z-index: 111;
+}
+
+input::placeholder, textarea::placeholder{
+    font-family: var(--secondary-font-family);
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--input-placeholder-color);
+}
+
+textarea{
+    padding: 20px;
+    margin-top: 10px;
+}
+
+input:focus{
+    outline: none;
+}
+
+textarea:focus{
+    outline: none;
+}
+
+input{
+    height: 50px;
+    margin: 10px 0;
+}
+
+input[type='file']{
+    background-color: transparent;
+    padding: 10px 0 0 0;
+    border: none;
+    margin-bottom: 20px;
+}
+
+input[type = 'submit']{
+    background-color: var(--tertiary-color);
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    border: 2px solid var(--tertiary-color);
+    width: fit-content;
+    padding: 10px 50px;
+}
+
+input::file-selector-button{
+    background-color: var(--input-button-color);
+    color: var(--secondary-color);
+    border-radius: 10px;
+    padding: 10px 30px;
+    border: 2px solid var(--border-color);
+    font-family: var(--secondary-font-family);
+}
+
+/* ==================================================
+                Header styles
+================================================== */
+
+.header{
+    color: white;
+    position: relative;
+}
+
+.header a{
+    font-size: 14px;
+    position: relative;
+}
+
+.header .nav-link::before{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0;
+    background-color: white;
+    left: 0;
+    bottom: -10px;
+    transition: all ease 400ms;
+}
+
+.header .nav-link:hover::before{
+    width: 100%;
+}
+
+.header .menu-icon{
+    display: none;
+}
+
+.active-link{
+    text-decoration: underline;
+    text-transform: uppercase;
+}

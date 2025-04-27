@@ -1,0 +1,48 @@
+@media screen and (max-width : 720px) {
+
+    h1{
+        font-size: 2rem;
+    }
+    
+    .header .container{
+        display: block;
+    }
+
+    .header .link-set-active{
+        text-align: center;
+        display: grid;
+        row-gap: 30px;
+    }
+
+    .header .link-set:nth-child(2){
+        margin: 30px 0;
+    }
+
+
+    .header .link-set{
+        /* display: none; */
+    }
+
+    .header .menu-icon{
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .header .logo-section{
+        width: 100%;
+        padding: 30px 0;
+    }
+
+    .agetn-header .text-content{
+        width: 100%;
+    }
+
+    
+}
+
+@media screen and (max-width:1200px) {
+    .agetn-header .text-content{
+        width: 70%;
+    }
+}

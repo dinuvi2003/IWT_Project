@@ -1,0 +1,17 @@
+/*add-apartment*/
+td {
+    text-align: center;
+}
+
+#btnDel {
+    background-color: orange;
+    color: white;
+    width: 100px;
+    height: 20px;
+}
+
+tr {
+    width: 200px;
+}
+ 
+
